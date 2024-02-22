@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convenient Smoke N Subs</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convenient Smoke N Subs</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Convenient Smoke N Subs</h1>
-            <nav>
-                <ul>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#vapes">Vapes</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+<header>
+    <h1>Convenient Smoke N Subs</h1>
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#vapes">Vapes</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="menu">
+        <h2>Our Sandwich Menu</h2>
+        <div class="menu-item">
+            <h3>Philly Cheese Steak</h3>
+            <p>A classic with tender steak, melted cheese, onions, and peppers.</p>
         </div>
-    </header>
-    <main>
-        <section id="menu" class="container">
-            <h2>Our Sandwich Menu</h2>
-            <div class="card" onclick="displayModal('Philly Cheese Steak')">
-                <h3>Philly Cheese Steak</h3>
-                <p>A classic with tender steak, melted cheese, onions, and peppers.</p>
-            </div>
-            <div class="card" onclick="displayModal('Italian Sub')">
-                <h3>Italian Sub</h3>
-                <p>Loaded with ham, salami, pepperoni, lettuce, tomato, onions, and Italian dressing.</p>
-            </div>
-            <!-- Add more cards for other items -->
-        </section>
-        <!-- Add more sections -->
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Convenient Smoke N Subs. All rights reserved.</p>
+        <div class="menu-item">
+            <h3>Italian Sub</h3>
+            <p>Loaded with ham, salami, pepperoni, lettuce, tomato, onions, and Italian dressing.</p>
         </div>
-    </footer>
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Item Details</h2>
-            <p id="modalDescription"></p>
+        <div class="menu-item">
+            <h3>Teriyaki Chicken</h3>
+            <p>Sweet and savory chicken with teriyaki sauce, lettuce, and mayo.</p>
         </div>
-    </div>
-    <script src="script.js"></script>
+        <div class="menu-item">
+            <h3>Ham & Swiss</h3>
+            <p>Classic ham and Swiss cheese with lettuce, tomato, and mustard.</p>
+        </div>
+    </section>
+    <section id="vapes">
+        <h2>Vapes & Smoke Shop</h2>
+        <p>We offer a variety of high-quality vapes and smoke shop items, including brands like Elf and Flair.</p>
+        <!-- Add more products here -->
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Visit us at 300 S. Pugh St., State College, PA or call us at (123) 456-7890.</p>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Convenient Smoke N Subs. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
