@@ -1,5 +1,5 @@
-// Example JavaScript for interactive elements (this is a placeholder)
-document.addEventListener('DOMContentLoaded', () => {
-    // Placeholder for any future JavaScript code for interactivity
-    console.log('Document loaded. Ready for interactivity.');
-});
+function displayModal(itemName) {
+    var modal = document.getElementById("modal");
+    var description = document.getElementById("modalDescription");
+    description.innerText = itemName + " details and customization options will be here.";
+    modal.style.display = "
