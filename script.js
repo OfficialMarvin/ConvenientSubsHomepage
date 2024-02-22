@@ -1,5 +1,9 @@
-function displayModal(itemName) {
-    var modal = document.getElementById("modal");
-    var description = document.getElementById("modalDescription");
-    description.innerText = itemName + " details and customization options will be here.";
-    modal.style.display = "
+// Add smooth scrolling to anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
