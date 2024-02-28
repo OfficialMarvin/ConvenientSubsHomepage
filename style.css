@@ -5,27 +5,56 @@
         background-color: #fff;
         margin: 0;
         padding: 0;
+        font-size: 18px; /* Base font size for document */
     }
     header, footer {
         background-color: #ff0000;
         color: #fff;
         text-align: center;
-        padding: 1em;
+        padding: 2em;
+    }
+    header h1 {
+        font-size: 4rem; /* Doubled size for prominence */
+        margin: 0;
+        padding: 0.5em 0; /* Adjusted padding for aesthetic */
     }
     .container {
         padding: 2em;
+    }
+    .sub-menu {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        margin-bottom: 20px;
     }
-    img {
-        max-width: 100%;
+    .sub-item {
+        margin: 10px 0;
+        padding: 10px;
+        border: 2px solid #ff0000;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        text-align: left;
+        font-size: 1.5em; /* Enhanced for readability */
+    }
+    .images-collage {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .images-collage img {
+        width: calc(50% - 5px);
+        margin-bottom: 10px;
         height: auto;
-        margin-bottom: 20px; /* Add some space between the images */
     }
     .map-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+    }
+    .map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        max-width: 600px; /* Limit map width */
-        margin-top: 20px;
+        height: 100%;
     }
 </style>
