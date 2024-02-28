@@ -38,21 +38,19 @@
         }
         .images-collage {
             display: flex;
-            justify-content: space-between;
             margin-bottom: 20px;
         }
-        .images-collage .left,
-        .images-collage .right {
+        .left, .right {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
-        .images-collage .left {
-            flex: 1;
+        .left {
+            flex: 50%;
             margin-right: 10px;
         }
-        .images-collage .right {
-            flex: 1;
+        .right {
+            flex: 50%;
             display: flex;
             flex-direction: column;
         }
@@ -61,7 +59,7 @@
             margin-bottom: 10px;
             height: auto;
         }
-        .images-collage .right img:last-child {
+        .left img:last-child, .right img:last-child {
             margin-bottom: 0;
         }
         .map-container {
@@ -99,17 +97,19 @@
             <div class="left">
                 <!-- Image of Storefront -->
                 <img src="https://i0.wp.com/images.onwardstate.com/uploads/2024/02/smokensubs-pie-20-scaled.jpg?resize=1536%2C1024&ssl=1" alt="Storefront">
+                <!-- Placeholder for the fourth image -->
+                <img src="https://i0.wp.com/images.onwardstate.com/uploads/2024/02/smokensubs-pie-14-scaled.jpg?ssl=1" alt="Aisle>
             </div>
             <div class="right">
-                <!-- Image of Drink Aisle with Icecream Freeze -->
-                <img src="https://i1.wp.com/images.onwardstate.com/uploads/2024/02/smokensubs-pie-19-scaled.jpg?ssl=1" alt="Drink Aisle with Icecream Freezer">
+                <!-- Image of Drink Aisle with Icecream Freezer -->
+                <img src="https://i1.wp.com/images.onwardstate.com/uploads/2024/02/smokensubs-pie-19-scaled.jpg?ssl=1" alt="Aisle">
                 <!-- Image of a Cheesesteak Sub -->
                 <img src="https://i0.wp.com/images.onwardstate.com/uploads/2024/02/smokensubs-pie-03-scaled.jpg?resize=2560%2C1707&ssl=1" alt="Cheesesteak Sub">
             </div>
         </div>
 
         <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12163.73417859143!2d-77.8597171!3d40.7933946!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x54670d490f3213b4!2s300%20S%20Pugh%20St%2C%20State%20College%2C%20PA%2016801!5e0!3m2!1sen!2sus!4v1641234567890" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.672065535525!2d-77.85885008443685!3d40.79339497932227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x54670d490f3213b4!2s300%20S%20Pugh%20St%2C%20State%20College%2C%20PA%2016801!5e0!3m2!1sen!2sus!4v1641234567890" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </div>
 
