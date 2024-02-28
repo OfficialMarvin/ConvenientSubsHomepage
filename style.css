@@ -1,90 +1,52 @@
-/* Reset styles */
-* {
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Container */
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header */
 header {
-    background-color: #f1f1f1;
-    padding: 15px 0;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-nav ul {
+header nav ul {
     list-style: none;
     padding: 0;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 20px;
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-nav a {
+header nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #333;
 }
 
-nav a:hover {
+#hero {
+    background-color: #fff;
     color: #000;
-}
-
-/* Main */
-main {
-    padding-bottom: 50px;
+    text-align: center;
+    padding: 50px 0;
 }
 
 section {
-    margin-bottom: 50px;
+    padding: 50px 20px;
 }
 
-h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-p {
-    line-height: 1.5;
-}
-
-.menu-item {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.menu-item h3 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-}
-
-.price {
-    float: right;
-    font-weight: bold;
-}
-
-/* Footer */
 footer {
-    background-color: #f1f1f1;
-    padding: 10px 0;
+    background-color: #ff0000;
+    color: #ffffff;
     text-align: center;
+    padding: 20px 0;
+}
+
+h1, h2 {
+    font-family: 'Comic Sans MS', cursive;
+    color: #ff0000;
 }
