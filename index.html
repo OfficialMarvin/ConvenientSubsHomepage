@@ -12,27 +12,62 @@
             background-color: #fff;
             margin: 0;
             padding: 0;
+            font-size: 18px;
         }
         header, footer {
             background-color: #ff0000;
             color: #fff;
             text-align: center;
-            padding: 1em;
+            padding: 2em;
         }
         .container {
             padding: 2em;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
+        .sub-menu {
+            display: flex;
+            flex-direction: column;
             margin-bottom: 20px;
+        }
+        .sub-item {
+            margin: 10px 0;
+            padding: 10px;
+            border: 2px solid #ff0000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: left;
+            font-size: 1.5em;
+        }
+        .images-collage {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .images-collage .left,
+        .images-collage .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .images-collage .left {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .images-collage .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .images-collage img {
+            width: 100%;
+            margin-bottom: 10px;
+            height: auto;
+        }
+        .images-collage .right img:last-child {
+            margin-bottom: 0;
         }
         .map-container {
             position: relative;
             overflow: hidden;
             padding-top: 56.25%;
-            margin-bottom: 20px;
         }
         .map-container iframe {
             position: absolute;
@@ -52,14 +87,26 @@
         <h2>Welcome to Your Local Convenience Hub!</h2>
         <p>Discover our wide selection of subs, snacks, drinks, and vaping gear.</p>
 
-        <!-- Image of Storefront -->
-        <img src="https://i0.wp.com/images.onwardstate.com/uploads/2024/02/smokensubs-pie-20-scaled.jpg?resize=1536%2C1024&ssl=1" alt="Storefront">
+        <div class="sub-menu">
+            <div class="sub-item">Italian - $5.49 / $7.49</div>
+            <div class="sub-item">Turkey & Cheese - $5.49 / $7.49</div>
+            <div class="sub-item">Ham & Swiss - $5.49 / $7.49</div>
+            <div class="sub-item">Steak & Cheese - $6.99 / $8.99</div>
+            <div class="sub-item">Chicken Teriyaki - $5.99 / $7.99</div>
+        </div>
 
-        <!-- Image of Drink Aisle with Icecream Freezer -->
-        <img src="https://i1.wp.com/images.onwardstate.com/uploads/2024/02/smokensubs-pie-19-scaled.jpg?ssl=1" alt="Drink Aisle with Icecream Freezer">
-
-        <!-- Image of a Cheesesteak Sub -->
-        <img src="https://i0.wp.com/images.onwardstate.com/uploads/2024/02/smokensubs-pie-03-scaled.jpg?resize=2560%2C1707&ssl=1" alt="Cheesesteak Sub">
+        <div class="images-collage">
+            <div class="left">
+                <!-- Image of Storefront -->
+                <img src="https://i0.wp.com/images.onwardstate.com/uploads/2024/02/smokensubs-pie-20-scaled.jpg?resize=1536%2C1024&ssl=1" alt="Storefront">
+            </div>
+            <div class="right">
+                <!-- Image of Drink Aisle with Icecream Freezer -->
+                <img src="https://i1.wp.com/images.onwardstate.com/uploads/2024/02/smokensubs-pie-19-scaled.jpg?ssl=1" alt="Drink Aisle with Icecream Freezer">
+                <!-- Image of a Cheesesteak Sub -->
+                <img src="https://i0.wp.com/images.onwardstate.com/uploads/2024/02/smokensubs-pie-03-scaled.jpg?resize=2560%2C1707&ssl=1" alt="Cheesesteak Sub">
+            </div>
+        </div>
 
         <div class="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12163.73417859143!2d-77.8597171!3d40.7933946!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x54670d490f3213b4!2s300%20S%20Pugh%20St%2C%20State%20College%2C%20PA%2016801!5e0!3m2!1sen!2sus!4v1641234567890" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -69,10 +116,5 @@
     <footer>
         <p>Visit us or call (582) 220-2065 for more information. Open daily from 8 AM to midnight.</p>
     </footer>
-
-    <script>
-        // Placeholder for any future JavaScript you might want to add
-        // For example, to enhance the user experience with interactive features
-    </script>
 </body>
 </html>
